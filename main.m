@@ -1,14 +1,14 @@
-hepatitis_data=readtable('hepatitis_csv.csv');
+hepatitis_data=readtable('hepatitis_2_csv.csv');
 
 hepatitis=table2array(hepatitis_data)
 
 % training data
-training_class_name = hepatitis(1:110,20:20);
-training_data = hepatitis(1:110,1:19);
+training_class_name = hepatitis(1:500,20:20);
+training_data = hepatitis(1:500,1:19);
 
 % validating data
-validating_class_names = hepatitis(111:142,20:20);
-validating_data = hepatitis(111:142,1:19);
+validating_class_names = hepatitis(501:568,20:20);
+validating_data = hepatitis(501:568,1:19);
 
 % getting the svm model using fitcsvm function
 SVM_model=fitcsvm(training_data,training_class_name);
