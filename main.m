@@ -20,6 +20,7 @@ while 1==1
 
         % checking the accuracy 
         accuracy = sum(predicted_class_name == validating_class_names)/numel(validating_class_names)
+        % confusion chart is added
         cm = confusionchart(validating_class_names,predicted_class_name);
         mean_square_error=mean((validating_class_names-predicted_class_name).^2)
         
