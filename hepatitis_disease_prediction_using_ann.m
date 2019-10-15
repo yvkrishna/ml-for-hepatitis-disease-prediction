@@ -22,7 +22,7 @@ view(net)
 nntraintool
 plotperform(tr)
 
-% Testing
+% Testing the dataset
 testX = tr1(:,tr.testInd);
 testT = training_class_name(:,tr.testInd);
 
