@@ -21,7 +21,7 @@ tr2=transpose(validating_data);
 theta2=randperm(10000,19);
 inputs2=theta2*tr2;
 
-% Applying ANN
+
 net = feedforwardnet(10);
 net = train(net,inputs1,training_class_name);
 view(net)
